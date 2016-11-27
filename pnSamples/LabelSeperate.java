@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.io.*;
 public class LabelSeperate {
+	//sample input: LabelSeperate ./data/pnSamples/profession ./data/professions
 	public static void main(String args[]){
 		System.out.println(args[0]+" "+args[1]);
 		Set<String> nameSet;//professions or nationalities
