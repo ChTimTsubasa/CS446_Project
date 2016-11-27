@@ -9,9 +9,24 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 public class Loader {
+	public static void storeSet(String fileName,Iterable<String> iter){
+		FileWriter fw=null;
+		try{
+			fw=new FileWriter(new File(fileName));	
+			for(String line:iter){
+				fw.write(line.trim()+"\n");
+				
+			}
+			fw.flush();
+			fw.close();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
 	public static Set<String> loadValues(String fileName){
 		Set<String> values=new HashSet<String>();
 		
