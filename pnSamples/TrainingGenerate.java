@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import dataAccess;
 public class TrainingGenerate {
 	//arg[0] is nationality.kb/profession.kb   
 	//arg[1] is nationalities/professions
